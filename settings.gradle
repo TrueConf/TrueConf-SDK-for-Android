@@ -1,0 +1,9 @@
+include ':TestApp1', ':TestApp2', ':TestApp3', ':TestApp4', ':TestApp5', ':TestApp6', ':TestApp7'
+
+project(":TestApp1").projectDir = new File("$settingsDir/TestApp1")
+project(":TestApp2").projectDir = new File("$settingsDir/TestApp2")
+project(":TestApp3").projectDir = new File("$settingsDir/TestApp3")
+project(":TestApp4").projectDir = new File("$settingsDir/TestApp4")
+project(":TestApp5").projectDir = new File("$settingsDir/TestApp5")
+project(":TestApp6").projectDir = new File("$settingsDir/TestApp6")
+project(":TestApp7").projectDir = new File("$settingsDir/TestApp7")

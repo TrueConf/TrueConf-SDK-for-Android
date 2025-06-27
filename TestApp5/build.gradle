@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven {
+        credentials {
+            username project.findProperty("trueconfUsername") ?: ""
+            password project.findProperty("trueconfPassword") ?: ""
+        }
+        url 'https://sdk.trueconf.com/maven/repository/maven-public/'
+    }
+}
+
+android {
+    compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    defaultConfig {
+        applicationId "com.trueconf.sample.TestApp5"
+        minSdkVersion 24
+        targetSdkVersion 34
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    namespace 'com.trueconf.sample'
+}
+
+dependencies {
+    api 'com.trueconf:trueconfsdk:3.0.0.49@aar'
+    api 'com.trueconf:media:3.0.0.49@aar'
+    api 'com.trueconf:jnicore:3.0.0.49@aar'
+    implementation 'androidx.work:work-runtime:2.9.0'
+    implementation 'androidx.concurrent:concurrent-futures:1.1.0'
+    implementation 'androidx.core:core:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.7.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'androidx.leanback:leanback-preference:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.emoji:emoji-bundled:1.1.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'org.greenrobot:eventbus:3.3.1'
+}

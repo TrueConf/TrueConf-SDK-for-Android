@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tv_chat_msg_incoming_author"
+            tools:ignore="InconsistentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/ChatDateTextColor"
+            android:textSize="16sp" />
+
+    <FrameLayout
+            android:id="@+id/messageIn"
+            tools:ignore="InconsistentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tv_chat_msg_incoming_author"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="5dip"
+            android:layout_marginEnd="50dip"
+            android:layout_marginTop="-9dp"
+            android:background="@drawable/bg_chat_msg_left">
+
+        <TextView
+                android:id="@+id/tv_chat_msg_incoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dp"
+                android:focusable="false"
+                android:textColor="@color/ChatDateTextColor"
+                android:textSize="17sp" />
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/messageOut"
+            tools:ignore="InconsistentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="9dip"
+            android:layout_marginStart="50dip"
+            android:layout_marginEnd="5dip"
+            android:layout_marginTop="-9dp"
+            android:background="@drawable/bg_chat_msg_right">
+
+        <TextView
+                android:id="@+id/tv_chat_msg_outgoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textIsSelectable="true"
+                android:focusable="false"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/ChatDateTextColor"
+                android:textSize="17sp" />
+    </FrameLayout>
+
+</RelativeLayout>

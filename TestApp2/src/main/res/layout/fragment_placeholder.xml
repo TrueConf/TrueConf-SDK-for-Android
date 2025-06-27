@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/rl_external_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_connect"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_link"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link: "
+            android:textColor="@android:color/black" />
+
+
+        <EditText
+            android:id="@+id/et_link"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_link"
+            android:layout_toEndOf="@+id/tv_link"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_parse_link"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_link"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="Parse link"
+            app:icon="@drawable/outline_arrow_right_alt_24"
+            app:iconGravity="textEnd"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_clear"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_link"
+            android:layout_marginTop="8dp"
+            android:text="Clear"
+            app:icon="@drawable/twotone_delete_24"/>
+
+
+    </RelativeLayout>
+</ScrollView>
