@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttons_end_call" type="id"/>
+    <item name="buttons_cam" type="id"/>
+    <item name="buttons_mic" type="id"/>
+</resources>

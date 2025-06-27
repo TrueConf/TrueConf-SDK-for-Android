@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Example 2</string>
+    <string name="login_pass">Login Pass</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name_online_service">TrueConf Online</string>
+    <string name="login">Login</string>
+    <string name="call_to">Call to</string>
+    <string name="action_call">Call</string>
+    <string name="msg_empty_login_or_pass">Empty login or pass</string>
+    <string name="msg_empty_peer_id">Must not be empty</string>
+    <string name="state_no_network">No network</string>
+    <string name="state_connecting">Connecting</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_disconnected">Disconected</string>
+    <string name="server_id">TrueConf Server Hostname/IP</string>
+</resources>
