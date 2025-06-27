@@ -12,11 +12,11 @@
 <p align="center">Una biblioteca de software para integrar comunicación por video de nivel empresarial en aplicaciones móviles Android</p>
 
 <p align="center">
-    <a href="https://t.me/trueconf_talks" target="_blank">
-        <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram" />
+    <a href="https://t.me/trueconf_chat" target="_blank">
+        <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram"/>
     </a>
     <a href="https://chat.whatsapp.com/GY97WBzSgvD1cJG0dWEiGP">
-        <img src="https://img.shields.io/badge/whatsapp-commiunity-gree?style=flat-square&logo=whatsapp" />
+        <img src="https://img.shields.io/badge/whatsapp-commiunity-gree?style=flat-square&logo=whatsapp"/>
     </a>
     <a href="#">
         <img src="https://img.shields.io/github/stars/trueconf/trueconf-sdk-for-android?style=social" />
@@ -150,8 +150,8 @@ El SDK oficial garantiza la interacción fiable de las aplicaciones móviles con
    trueconfPassword=your_password
    ```
 
-   > [!WARNING]
-   > Sustituye **your_login** y **your_password** por las credenciales que te hayan proporcionado.
+> [!WARNING]
+> Sustituye **your_login** y **your_password** por las credenciales que te hayan proporcionado.
 
 ## Estructura del Proyecto
 

@@ -12,7 +12,7 @@
 <p align="center">A software library for embedding enterprise-grade video communication into Android mobile applications</p>
 
 <p align="center">
-    <a href="https://t.me/trueconf_talks" target="_blank">
+    <a href="https://t.me/trueconf_chat" target="_blank">
         <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram" />
     </a>
     <a href="https://chat.whatsapp.com/GY97WBzSgvD1cJG0dWEiGP">
@@ -150,8 +150,8 @@ The official SDK ensures reliable interaction of mobile applications with other 
    trueconfPassword=your_password
    ```
 
-   > [!WARNING]
-   > Replace **your_login** and **your_password** with the credentials provided to you.
+> [!WARNING]
+> Replace **your_login** and **your_password** with the credentials provided to you.
 
 ## Project Structure
 

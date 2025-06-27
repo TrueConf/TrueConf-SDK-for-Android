@@ -12,7 +12,7 @@
 <p align="center">Eine Softwarebibliothek zur Integration von unternehmensgerechter Videokommunikation in Android-Apps</p>
 
 <p align="center">
-    <a href="https://t.me/trueconf_talks" target="_blank">
+    <a href="https://t.me/trueconf_chat" target="_blank">
         <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram" />
     </a>
     <a href="https://chat.whatsapp.com/GY97WBzSgvD1cJG0dWEiGP">
@@ -150,8 +150,8 @@ Das **TrueConf SDK** für mobile Anwendungen wird über ein **privates Remote-Re
    trueconfPassword=your_password
    ```
 
-   > [!WARNUNG]
-   > Ersetzen Sie **your_login** und **your_password** durch die Ihnen bereitgestellten Zugangsdaten.
+> [!WARNUNG]
+> Ersetzen Sie **your_login** und **your_password** durch die Ihnen bereitgestellten Zugangsdaten.
 
 ## Projektstruktur
 
