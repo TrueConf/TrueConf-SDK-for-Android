@@ -15,9 +15,6 @@
     <a href="https://t.me/trueconf_talks" target="_blank">
         <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram" />
     </a>
-    <a href="https://chat.whatsapp.com/GY97WBzSgvD1cJG0dWEiGP">
-        <img src="https://img.shields.io/badge/whatsapp-commiunity-gree?style=flat-square&logo=whatsapp" />
-    </a>
     <a href="#">
         <img src="https://img.shields.io/github/stars/trueconf/trueconf-sdk-for-android?style=social" />
     </a>
@@ -151,8 +148,8 @@ TrueConf SDK доступен не только для нативных плат
    trueconfPassword=your_password
    ```
 
-   > [!WARNING]
-   > Замените **your\_login** и **your\_password** на выданные вам учетные данные.
+> [!WARNING]
+> Замените **your\_login** и **your\_password** на выданные вам учетные данные.
 
 ## Структура проекта
 

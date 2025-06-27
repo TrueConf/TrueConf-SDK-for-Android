@@ -1,7 +1,55 @@
-/.gradle/
-/.idea/
-/*/build/
-/*/*.iml
-/local.properties
+# 🛠 Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
 
+# 📦 Maven
+target/
+
+# 🧪 Tests
+/reports/
+/build/reports/
+/build/test-results/
+/build/test-outputs/
+/build/reports/problems/
+*.html
+*.xml
+
+# 📂 IDE (IntelliJ, Android Studio)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 💻 VS Code
+.vscode/
+
+# 🔐 Private
+*.keystore
+local.properties
+
+# ⚙️ OS temp files
 .DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 📜 Kotlin/Java 
+*.class
+
+# 🧪 JUnit, JaCoCo .
+jacoco.exec
+*.ec
+*.exec
+
+# 🌐 Web-projects
+node_modules/
+dist/
+out/
+.env
+
+# 🗃️ Caches
+.cache/
+logs/
