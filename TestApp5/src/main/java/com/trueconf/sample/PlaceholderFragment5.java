@@ -19,10 +19,9 @@ import androidx.fragment.app.Fragment;
 import com.trueconf.sample.databinding.FragmentPlaceholderBinding;
 import com.trueconf.sdk.TrueConfSDK;
 import com.trueconf.sdk.TrueConfListener;
-import com.vc.data.enums.ConnectionEvents;
 import com.vc.jnilib.FSM;
 
-public class PlaceholderFragment extends Fragment implements TrueConfListener.LoginEventsCallback,
+public class PlaceholderFragment5 extends Fragment implements TrueConfListener.LoginEventsCallback,
         TrueConfListener.ServerStatusEventsCallback {
 
     private EditText mETLogin, mETPass, mETServerId, mETUserId;
@@ -37,7 +36,7 @@ public class PlaceholderFragment extends Fragment implements TrueConfListener.Lo
 
     private FragmentPlaceholderBinding binding;
 
-    public PlaceholderFragment() {
+    public PlaceholderFragment5() {
         super(R.layout.fragment_placeholder);
     }
 

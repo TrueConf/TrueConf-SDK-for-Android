@@ -9,14 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.trueconf.sample.databinding.ListItemLayoutBinding;
 import com.trueconf.sdk.domain.models.ContactInfo;
 import com.vc.data.enums.PresenceStatus;
-import java.util.ArrayList;
-import java.util.Locale;
+import java.util.List;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactViewHolder> {
 
-    ArrayList<ContactInfo> contacts;
+    List<ContactInfo> contacts;
 
-    ContactsAdapter(ArrayList<ContactInfo> contacts) {
+    ContactsAdapter(List<ContactInfo> contacts) {
         this.contacts = contacts;
     }
 
