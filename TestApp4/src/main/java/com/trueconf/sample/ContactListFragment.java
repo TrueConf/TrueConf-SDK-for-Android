@@ -20,8 +20,6 @@ import com.trueconf.sdk.TrueConfSDK;
 import com.trueconf.sdk.TrueConfListener;
 import com.vc.data.enums.PresenceStatus;
 
-import java.util.ArrayList;
-
 public class ContactListFragment extends Fragment implements TrueConfListener.UserStatusEventsCallback {
 
     private ContactsAdapter adapter;
@@ -52,7 +50,7 @@ public class ContactListFragment extends Fragment implements TrueConfListener.Us
             var status = TrueConfSDK.getContactsManager().getUserStatus(peerId);
             adapter.updateContact(peerId, status);
         });
-        adapter = new ContactsAdapter(new ArrayList<>());
+        adapter = new ContactsAdapter(TrueConfSDK.getContactsManager().getUsers());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
     }
@@ -75,11 +73,9 @@ public class ContactListFragment extends Fragment implements TrueConfListener.Us
     @SuppressLint("NotifyDataSetChanged")
     @Override
     public void onContactListUpdate() {
-        if (adapter.contacts.size() <= 1) {
-            var peerList = TrueConfSDK.getContactsManager().getUsers();
-            adapter.contacts.clear();
-            adapter.contacts.addAll(peerList);
-            adapter.notifyDataSetChanged();
-        }
+        var peerList = TrueConfSDK.getContactsManager().getUsers();
+        adapter.contacts.clear();
+        adapter.contacts.addAll(peerList);
+        adapter.notifyDataSetChanged();
     }
 }

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:background="@color/TextWhiteColor">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
         android:text="Test Screen"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/black" />
@@ -20,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
         android:text="@string/close"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/black" />

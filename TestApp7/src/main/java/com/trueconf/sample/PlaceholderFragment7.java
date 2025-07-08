@@ -28,7 +28,7 @@ import com.vc.jnilib.FSM;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class PlaceholderFragment extends Fragment implements TrueConfListener.LoginEventsCallback,
+public class PlaceholderFragment7 extends Fragment implements TrueConfListener.LoginEventsCallback,
         TrueConfListener.ServerStatusEventsCallback, TrueConfListener.AudioDeviceCallback {
 
     private EditText etServerId, etUserId;

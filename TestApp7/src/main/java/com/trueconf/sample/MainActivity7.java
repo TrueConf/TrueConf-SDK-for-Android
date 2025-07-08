@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.WindowManager;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.trueconf.sample.databinding.ActivityMainBinding;
 import com.trueconf.sample.fragments.ConferenceFragmentCast;
@@ -13,7 +17,6 @@ import com.trueconf.sample.fragments.IncomingCallFragmentCast;
 import com.trueconf.sample.fragments.PlaceCallFragmentCast;
 import com.trueconf.sdk.TrueConfListener;
 import com.trueconf.sdk.TrueConfSDK;
-import com.vc.jnilib.data.GfxLayout;
 
 import java.util.HashMap;
 import java.util.List;
@@ -24,15 +27,23 @@ public class MainActivity7 extends AppCompatActivity implements TrueConfListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        EdgeToEdge.enable(this);
         super.onCreate(savedInstanceState);
         setTitle("Example 7. Custom layout");
         TrueConfSDK.getInstance().setFallbackActivity(MainActivity7.class);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        ViewCompat.setOnApplyWindowInsetsListener(getWindow().getDecorView(), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return WindowInsetsCompat.CONSUMED;
+        });
+
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(binding.container.getId(), new PlaceholderFragment())
+                    .replace(binding.container.getId(), new PlaceholderFragment7())
                     .commit();
         }
         TrueConfSDK.getInstance().addTrueconfListener(this);
