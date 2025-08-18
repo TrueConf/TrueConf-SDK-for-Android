@@ -38,9 +38,9 @@ android {
 }
 
 dependencies {
-    api 'com.trueconf:trueconfsdk:3.0.7.65@aar'
-    api 'com.trueconf:media:3.0.7.65@aar'
-    api 'com.trueconf:jnicore:3.0.7.65@aar'
+    api 'com.trueconf:trueconfsdk:3.0.7.71@aar'
+    api 'com.trueconf:media:3.0.7.71@aar'
+    api 'com.trueconf:jnicore:3.0.7.71@aar'
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
     implementation 'androidx.work:work-runtime:2.9.0'
     implementation 'androidx.concurrent:concurrent-futures:1.1.0'
