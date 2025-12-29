@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://trueconf.ru" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://trueconf.ru/images/headMenu/logo-cyrillic.svg">
-      <img width="150" src="https://trueconf.ru/images/headMenu/logo-cyrillic.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TrueConf/.github/refs/heads/main/logos/logo-cyrillic-dark.svg">
+      <img width="150" src="https://raw.githubusercontent.com/TrueConf/.github/refs/heads/main/logos/logo-cyrillic.svg">
     </picture>
   </a>
 </p>
@@ -13,7 +13,7 @@
 
 <p align="center">
     <a href="https://t.me/trueconf_talks" target="_blank">
-        <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram" />
+       <img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" />
     </a>
     <a href="#">
         <img src="https://img.shields.io/github/stars/trueconf/trueconf-sdk-for-android?style=social" />
