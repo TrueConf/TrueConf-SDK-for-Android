@@ -22,6 +22,10 @@ public class PlaceCallFragmentCast extends PlaceCallFragment implements TrueConf
     private ImageButton btnMic;
     private ImageButton btnCamera;
 
+    public PlaceCallFragmentCast() {
+        super();
+    }
+
     public PlaceCallFragmentCast(int contentLayoutId) {
         super(contentLayoutId);
     }

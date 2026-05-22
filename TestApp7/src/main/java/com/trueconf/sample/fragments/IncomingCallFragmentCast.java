@@ -20,6 +20,10 @@ import java.util.List;
 public class IncomingCallFragmentCast extends IncomingCallFragment implements TrueConfListener.AudioDeviceCallback, TrueConfListener.VideoDeviceCallback {
     private ImageButton btnMic, btnCam;
 
+    public IncomingCallFragmentCast() {
+        super();
+    }
+
     public IncomingCallFragmentCast(int contentLayoutId) {
         super(contentLayoutId);
     }

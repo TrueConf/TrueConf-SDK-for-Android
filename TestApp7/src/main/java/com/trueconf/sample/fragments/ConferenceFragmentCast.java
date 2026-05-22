@@ -27,6 +27,10 @@ public class ConferenceFragmentCast extends ConferenceFragment implements TrueCo
 
     private boolean showDialog = false;
 
+    public ConferenceFragmentCast() {
+        super();
+    }
+
     public ConferenceFragmentCast(int contentLayoutId) {
         super(contentLayoutId);
     }
