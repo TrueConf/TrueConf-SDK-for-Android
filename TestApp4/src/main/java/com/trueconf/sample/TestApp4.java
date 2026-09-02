@@ -1,10 +1,10 @@
 package com.trueconf.sample;
 
-import androidx.multidex.MultiDexApplication;
+import android.app.Application;
 
 import com.trueconf.sdk.TrueConfSDK;
 
-public class TestApp4 extends MultiDexApplication {
+public class TestApp4 extends Application {
 
 	public void onCreate() {
         super.onCreate();

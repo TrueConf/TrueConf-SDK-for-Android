@@ -1,0 +1,13 @@
+-keep class com.vc.** { *; }
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+
+-dontwarn android.content.**
+-dontwarn android.provider.**
+-dontwarn android.hardware.camera2.**
+-dontwarn android.os.**
+-dontwarn com.bumptech.**
+-dontwarn com.google.**
+-dontwarn org.jsoup.**
