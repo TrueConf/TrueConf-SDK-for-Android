@@ -206,7 +206,7 @@ gradle.properties
 
 ### Инициализация приложения
 
-В проекте отройте файл `TestApp1.java` в модуле `TestApp1`. Файл `TestApp1.java` представляет собой главный класс приложения (`Application`), который отвечает за инициализацию TrueConf SDK при старте приложения. Он поддерживает `MultiDex` (MultiDexApplication), что позволяет обойти лимит в 65 536 методов и использовать несколько **.dex**-файлов. Подробнее в [официальной документации](https://developer.android.com/build/multidex).
+В проекте отройте файл `TestApp1.java` в модуле `TestApp1`. Файл `TestApp1.java` представляет собой главный класс приложения (`Application`), который отвечает за инициализацию TrueConf SDK при старте приложения. Он поддерживает `MultiDex`, что позволяет обойти лимит в 65 536 методов и использовать несколько **.dex**-файлов. Подробнее в [официальной документации](https://developer.android.com/build/multidex).
 
 Для инициализации SDK нужно зарегистрировать приложение с помощью метода [`registerApp`](https://trueconf.ru/docs/mobile-sdk/ru/functions-android/#registerapp). В качестве параметра передаём this (основной класс приложения, который является наследником Application). Это необходимо для управления ресурсами SDK на протяжении всего жизненного цикла приложения.
 
@@ -218,7 +218,7 @@ gradle.properties
 **Пример класса `TestApp1`**:
 
 ```java
-public class TestApp1 extends MultiDexApplication {
+public class TestApp1 extends Application {
 
     @Override
     public void onCreate() {

@@ -208,7 +208,7 @@ Eine Anwendung, in der alle Hauptfunktionen des TrueConf SDK implementiert sind:
 
 ### Initialisierung der Anwendung
 
-Öffnen Sie im Projekt die Datei `TestApp1.java` im Modul `TestApp1`. Die Datei `TestApp1.java` ist die Hauptanwendungsklasse (`Application`), die für die Initialisierung des TrueConf SDK beim Start der App verantwortlich ist. Sie unterstützt `MultiDex` (`MultiDexApplication`), was es ermöglicht, die 65.536 Methoden-Grenze zu umgehen und mehrere **.dex**-Dateien zu verwenden. Weitere Informationen finden Sie in der [offiziellen Dokumentation](https://developer.android.com/build/multidex).
+Öffnen Sie im Projekt die Datei `TestApp1.java` im Modul `TestApp1`. Die Datei `TestApp1.java` ist die Hauptanwendungsklasse (`Application`), die für die Initialisierung des TrueConf SDK beim Start der App verantwortlich ist. Sie unterstützt `MultiDex`, was es ermöglicht, die 65.536 Methoden-Grenze zu umgehen und mehrere **.dex**-Dateien zu verwenden. Weitere Informationen finden Sie in der [offiziellen Dokumentation](https://developer.android.com/build/multidex).
 
 Um das SDK zu initialisieren, registrieren Sie die Anwendung mit der Methode [`registerApp`](https://trueconf.com/docs/mobile-sdk/en/functions-android/#registerapp). Übergeben Sie `this` (die Hauptanwendungsklasse, die von Application erbt) als Parameter. Dies ist erforderlich, um die SDK-Ressourcen während des gesamten Lebenszyklus der Anwendung zu verwalten.
 
@@ -220,7 +220,7 @@ Zum Starten des SDK verwenden Sie die Methode [**start**](https://trueconf.com/d
 **Beispiel für die Klasse `TestApp1`:**
 
 ```java
-public class TestApp1 extends MultiDexApplication {
+public class TestApp1 extends Application {
 
     @Override
     public void onCreate() {
